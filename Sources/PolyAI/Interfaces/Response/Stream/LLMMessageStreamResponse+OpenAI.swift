@@ -11,8 +11,7 @@ import SwiftOpenAI
 // MARK: OpenAI
 
 extension ChatCompletionChunkObject: LLMMessageStreamResponse {
-   
    public var content: String? {
-      choices.first?.delta.content
+      choices?.first?.delta?.content
    }
 }

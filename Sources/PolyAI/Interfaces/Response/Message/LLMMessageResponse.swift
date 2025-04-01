@@ -12,10 +12,10 @@ import Foundation
 /// A protocol defining the required properties for a response from an LLM service.
 public protocol LLMMessageResponse {
    /// A unique identifier for the message.
-   var id: String { get }
+   var id: String? { get }
    
    /// The model of the LLM that processed the message.
-   var model: String { get }
+   var model: String? { get }
    
    /// The role associated with the message, such as "user" or "assistant".
    var role: String { get }

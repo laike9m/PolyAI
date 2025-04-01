@@ -7,7 +7,7 @@ let package = Package(
     name: "PolyAI",
     platforms: [
          .iOS(.v15),
-         .macOS(.v14)
+         .macOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -17,8 +17,8 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/jamesrochabrun/SwiftOpenAI", branch: "main"),
-        .package(url: "https://github.com/jamesrochabrun/SwiftAnthropic", branch: "main"),
+        .package(url: "https://github.com/jamesrochabrun/SwiftOpenAI", from: "4.0.6"),
+        .package(url: "https://github.com/jamesrochabrun/SwiftAnthropic", from: "2.1.3"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
