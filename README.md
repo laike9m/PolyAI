@@ -97,7 +97,7 @@ Currently, the package supports OpenAI, Azure, Anthropic, Gemini, Groq, DeepSeek
 ```swift
 
 // OpenAI
-let openAIConfiguration: LLMConfiguration = .openAI(.api(key: "your_openai_api_key_here")
+let openAIConfiguration: LLMConfiguration = .openAI(.api(key: "your_openai_api_key_here"))
 
 // Gemini
 let geminiConfiguration: LLMConfiguration = .openAI(.gemini(apiKey: "your_gemini_api_key_here"))
